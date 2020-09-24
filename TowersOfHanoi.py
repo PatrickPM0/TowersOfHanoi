@@ -17,5 +17,5 @@ def Towers(n, fr, to, spare):
 
 
 if __name__ == "__main__":
-    blocks_number = int(input("How many blocks on the first tower?"))
+    blocks_number = int(input("How many blocks on the first tower?  "))
     Towers(blocks_number, 'P1', 'P2', 'P3')
