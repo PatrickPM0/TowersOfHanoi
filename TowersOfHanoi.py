@@ -1,10 +1,10 @@
 """
-Program to recursively solve the towers of hanoi of any size
+Program to recursively solve the towers of hanoi of any size.
 """
 
 
 def print_move(fr, to):
-    print('move from ' + str(fr) + ' to ' + str(to))
+    print(f"{fr} moves to {to}")
 
 
 def Towers(n, fr, to, spare):
@@ -16,4 +16,6 @@ def Towers(n, fr, to, spare):
         Towers(n-1, spare, to, fr)
 
 
-print(Towers(4, 'P1', 'P2', 'P3'))
+if __name__ == "__main__":
+    blocks_number = int(input("How many blocks on the first tower?"))
+    Towers(blocks_number, 'P1', 'P2', 'P3')
